@@ -1,0 +1,29 @@
+{
+  "Projects": [
+    {
+      "GlobalData": {
+        "ProjectId": "1b0ec096-835f-41b2-b99a-62a75a029b4e",
+        "ProjectName": "proj_1",
+        "DBTypeName": "SQL Server",
+        "Environments": null,
+        "SourceControlPathType": 0,
+        "Configuration": {
+          "BuildMigrationScriptAutomatically": true,
+          "BuildMethod": 1,
+          "NumberOfRevisionsInViewHistory": 50,
+          "NumberOfTagsInBuildOptions": 50,
+          "BuildDeploymentScriptOnPush": false
+        },
+        "ProjectArchitecture": 0,
+        "LocalDirectory": "Documents/proj_1"
+      },
+      "UserData": [
+        {
+          "UserName": "roylauzon",
+          "DatabasesData": []
+        }
+      ]
+    }
+  ],
+  "GlobalConfigurations": null
+}
