@@ -5,7 +5,25 @@
         "ProjectId": "1b0ec096-835f-41b2-b99a-62a75a029b4e",
         "ProjectName": "proj_1",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "cf228c35-6b7c-4c7d-9b4d-778f1ae4a4b3",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "cc1f2f94-c523-4416-87d9-9e557cf022e7",
+                "DatabaseAliasName": "db1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git, Version=1.0.0.7900, Culture=neutral, PublicKeyToken=null",
+                  "RemoteRepositoryURL": "https://github.com/roylauzon/projs_aug_22_db_1.git",
+                  "BranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -20,7 +38,24 @@
       "UserData": [
         {
           "UserName": "roylauzon",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "cc1f2f94-c523-4416-87d9-9e557cf022e7",
+              "DatabaseAliasName": "db1",
+              "DatabaseConnectionDetails": {
+                "DBTypeName": "SQL Server",
+                "Host": "DOPX-ROY\\SQLEXPRESS",
+                "AuthenticationType": 1,
+                "Username": "sa",
+                "Password": "3Gb0hbYzmDIwRNmEt2GLYw==",
+                "DatabaseName": "sand_22_1"
+              },
+              "RepositoryCredentials": {
+                "UserName": "roylauzon",
+                "Password": "Wo+U54PO156rBTycxNE7Djw+FH3MuzAZfOHDhyqSSYAvxueEr4yR4vcpzRKZkG13"
+              }
+            }
+          ]
         }
       ]
     }
