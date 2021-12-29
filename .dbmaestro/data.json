@@ -18,8 +18,8 @@
                 "RepositoryDetails": {
                   "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
                   "RemoteRepositoryURL": "https://github.com/roylauzon/projs_aug_22_db_1.git",
-                  "RemoteBranchName": "main_2",
-                  "LocalBranchName": "main_2"
+                  "RemoteBranchName": "main_3",
+                  "LocalBranchName": "main_3"
                 }
               }
             ]
@@ -64,8 +64,19 @@
                     "Host": "DOPX-ROY\\SQLEXPRESS",
                     "AuthenticationType": 1,
                     "Username": "sa",
-                    "Password": "3Gb0hbYzmDIwRNmEt2GLYw==",
+                    "Password": "123",
                     "DatabaseName": "sand_29_12"
+                  }
+                },
+                {
+                  "BranchName": "main_3",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "Host": "DOPX-ROY\\SQLEXPRESS",
+                    "AuthenticationType": 1,
+                    "Username": "sa",
+                    "Password": "3Gb0hbYzmDIwRNmEt2GLYw==",
+                    "DatabaseName": "sand_29_12_3"
                   }
                 }
               ],
