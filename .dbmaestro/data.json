@@ -16,9 +16,10 @@
                 "DatabaseAliasName": "db1",
                 "DatabaseConnectionDetails": null,
                 "RepositoryDetails": {
-                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git, Version=1.0.0.7900, Culture=neutral, PublicKeyToken=null",
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
                   "RemoteRepositoryURL": "https://github.com/roylauzon/projs_aug_22_db_1.git",
-                  "BranchName": "main"
+                  "RemoteBranchName": "main_2",
+                  "LocalBranchName": "main_2"
                 }
               }
             ]
@@ -30,7 +31,8 @@
           "BuildMethod": 1,
           "NumberOfRevisionsInViewHistory": 50,
           "NumberOfTagsInBuildOptions": 50,
-          "BuildDeploymentScriptOnPush": false
+          "BuildDeploymentScriptOnPush": false,
+          "PreventCommitObjectWithConflict": false
         },
         "ProjectArchitecture": 0,
         "LocalDirectory": "Documents/projec_1"
@@ -42,14 +44,31 @@
             {
               "DatabaseId": "bf355dd6-4fd6-4fc4-b04c-50b051c58159",
               "DatabaseAliasName": "db1",
-              "DatabaseConnectionDetails": {
-                "DBTypeName": "SQL Server",
-                "Host": "DOPX-ROY\\SQLEXPRESS",
-                "AuthenticationType": 1,
-                "Username": "sa",
-                "Password": "3Gb0hbYzmDIwRNmEt2GLYw==",
-                "DatabaseName": "sand_22_1"
-              },
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "Host": "DOPX-ROY\\SQLEXPRESS",
+                    "AuthenticationType": 1,
+                    "Username": "sa",
+                    "Password": "123",
+                    "DatabaseName": "sand_22_1"
+                  }
+                },
+                {
+                  "BranchName": "main_2",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "Host": "DOPX-ROY\\SQLEXPRESS",
+                    "AuthenticationType": 1,
+                    "Username": "sa",
+                    "Password": "3Gb0hbYzmDIwRNmEt2GLYw==",
+                    "DatabaseName": "sand_29_12"
+                  }
+                }
+              ],
               "RepositoryCredentials": {
                 "UserName": "roylauzon",
                 "Password": "ftPm7DV9mYIND7T90GVFTECq+9jSVLHWU6yCteJf16uBOWB++A01OdwLNBhRAHsD"
