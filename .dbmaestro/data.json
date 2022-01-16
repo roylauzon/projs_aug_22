@@ -105,7 +105,26 @@
         "ProjectId": "0e6debf9-09eb-4ab9-8125-5182baa47701",
         "ProjectName": "roy_local_test",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "89523803-c441-4df7-b040-6155e0a2b087",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "8bfcea2f-b458-4937-bb10-06a811319aff",
+                "DatabaseAliasName": "db1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/roylauzon/local_db_16_1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -121,7 +140,30 @@
       "UserData": [
         {
           "UserName": "roylauzon76",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "8bfcea2f-b458-4937-bb10-06a811319aff",
+              "DatabaseAliasName": "db1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "Host": "LAPTOP-CP56P066\\SQLEXPRESS",
+                    "AuthenticationType": 1,
+                    "Username": "sa",
+                    "Password": "3Gb0hbYzmDIwRNmEt2GLYw==",
+                    "DatabaseName": "sc_local_16_01"
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "roylauzon76",
+                "Password": "pbpuK3Ki2jUr7GlAUTmhhJthV/vkcB3hAanzkKBhsUyppab+cimEZFk7YJDb6C68"
+              }
+            }
+          ]
         }
       ]
     }
